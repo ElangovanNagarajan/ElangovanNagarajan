@@ -70,7 +70,7 @@
       flex: 100%;
     }
   }
-  @media screen and (max-width: 768px) and (min-width: 481px) {
+  @media screen and (min-width: 481px) and (max-width: 768px) {
     .c1,
     .c2,
     .c3,
@@ -78,7 +78,7 @@
       flex: 50%;
     }
   }
-  @media screen and (max-width: 480px) and {
+  @media screen and (max-width: 480 {
     .c1,
     .c2,
     .c3,
