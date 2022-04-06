@@ -74,10 +74,9 @@ function onDelete(td) {
 function validate() {
     var isValid = true;
     if (document.getElementById("fullName").value == "") {
-        isValid = false;
+        var isValid = false;
         document.getElementById("fullNameValidationError").classList.remove("hide");
     } else {
-        var isValid = true;
         if (!document.getElementById("fullNameValidationError").classList.contains("hide"))
             document.getElementById("fullNameValidationError").classList.add("hide");
     }
@@ -90,7 +89,6 @@ function validate() {
         var isValid = false;
         document.getElementById("fullNameValidationError").classList.remove("hide");
     } else {
-        var isValid = true;
         if (!document.getElementById("fullNameValidationError").classList.contains("hide"))
             document.getElementById("fullNameValidationError").classList.add("hide");
     }
