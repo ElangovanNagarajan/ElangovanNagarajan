@@ -34,8 +34,8 @@ function insertNewRecord(data) {
     cell4.innerHTML = data.gender;
     var cell5 = newRow.insertCell(4);
     cell5.innerHTML = data.hobby;
-    var cell5 = newRow.insertCell(5);
-    cell5.innerHTML = `<a onClick="onEdit(this)">Edit</a>
+    var cell6 = newRow.insertCell(5);
+    cell6.innerHTML = `<a onClick="onEdit(this)">Edit</a>
                        <a onClick="onDelete(this)">Delete</a>`;
 }
 
