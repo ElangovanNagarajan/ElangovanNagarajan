@@ -74,7 +74,7 @@ function onDelete(td) {
 function validate() {
     var isValid = true;
     if (document.getElementById("fullName").value == "") {
-        var isValid = false;
+        isValid = false;
         document.getElementById("fullNameValidationError").classList.remove("hide");
     } else {
         if (!document.getElementById("fullNameValidationError").classList.contains("hide"))
@@ -83,14 +83,3 @@ function validate() {
     return isValid;
 }
 
-function validate() {
-    var isValid = true;
-    if (document.getElementById("birth").value == "") {
-        var isValid = false;
-        document.getElementById("fullNameValidationError").classList.remove("hide");
-    } else {
-        if (!document.getElementById("fullNameValidationError").classList.contains("hide"))
-            document.getElementById("fullNameValidationError").classList.add("hide");
-    }
-    return isValid;
-}
