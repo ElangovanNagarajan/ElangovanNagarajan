@@ -77,7 +77,7 @@ function validate() {
         isValid = false;
         document.getElementById("fullNameValidationError").classList.remove("hide");
     } else {
-        isValid = true;
+        var isValid = true;
         if (!document.getElementById("fullNameValidationError").classList.contains("hide"))
             document.getElementById("fullNameValidationError").classList.add("hide");
     }
@@ -87,7 +87,7 @@ function validate() {
 function validate() {
     var isValid = true;
     if (document.getElementById("birth").value == "") {
-        isValid = false;
+        var isValid = false;
         document.getElementById("fullNameValidationError").classList.remove("hide");
     } else {
         var isValid = true;
