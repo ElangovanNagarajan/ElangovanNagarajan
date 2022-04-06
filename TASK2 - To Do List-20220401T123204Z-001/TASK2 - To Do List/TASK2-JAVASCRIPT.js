@@ -38,33 +38,17 @@ function checkCredentials(){
 }
 
 var myList = document.getElementById("myList");
-function addList(){
-    var text = document.getElementById("newList").value;
-    document.getElementById("newList").value = ""
-    var list = document.createElement("li");
-    var span = document.createElement("span");
-    list.innerHTML=text;
-    list.className = "l";
-    list.addEventListener('click', function(){
-        list.classList.toggle('completed');
-    })
-    myList.appendChild(list);
-    
-}
 
 function addList(){
-    if( document.getElementById("newList").value != ""){
     var text = document.getElementById("newList").value;
     document.getElementById("newList").value = ""
     var list = document.createElement("li");
-    var span = document.createElement("span");
     list.innerHTML=text;
     list.className = "l";
     list.addEventListener('click', function(){
         list.classList.toggle('completed');
     })
     myList.appendChild(list);
-}
     
 }
 
