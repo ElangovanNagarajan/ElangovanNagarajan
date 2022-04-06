@@ -66,13 +66,13 @@ function updateRecord(formData) {
 
 function onDelete(td) {
     if (confirm('Are you sure? You want to delete this record ?')) {
-        row = td.parentElement.parentElement;
+        var row = td.parentElement.parentElement;
         document.getElementById("infoList").deleteRow(row.rowIndex);
         resetForm();
     }
 }
 function validate() {
-    isValid = true;
+    var isValid = true;
     if (document.getElementById("fullName").value == "") {
         isValid = false;
         document.getElementById("fullNameValidationError").classList.remove("hide");
