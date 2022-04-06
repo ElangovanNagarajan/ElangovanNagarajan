@@ -7,7 +7,7 @@
     <title> SIGN_IN</title>
     <Style>
         body{
-    display: flex;;
+    display: flex;
     align-items: center;
     flex-direction: column;
 }
@@ -41,19 +41,20 @@ label{
     <h1>Sign-In page</h1><br>
     <div class="signin">
         <form action="TASK2-TO_DO_LIST.html" method="get" onsubmit="return checkCredentials()">
-            <table style="margin: auto;" cellpadding="20">
+            <table style="margin: auto;" >
+                <caption> Table </caption>
                 <tr>
-                    <td>
+                    <th id="" >
                         <label for="name">User Name:</label>
-                    </td>
+                    </th>
                     <td>
                         <input type="text" name="name" id="name" required><br>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <th id="" >
                         <label for="password">Password:</label>
-                    </td>
+                    </th>
                     <td>
                         <input type="password" id="password" required><br>
                     </td>
